@@ -39,3 +39,12 @@ https://cacoo.com/diagrams/z6zOOKOsZhlAu7nZ/B0C83
 ## リーンキャンパス
 
 https://drive.google.com/file/d/1trbyNucYqdNv8_lzZmUrMvJfXVwpw8qS/view?usp=sharing
+
+## 使用予定Gem
+ * devise
+ * mini_magick
+ * carrierwave
+ * rails-i18n
+ * bootstrap
+ 
+
