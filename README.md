@@ -17,13 +17,16 @@
 * ニュース一覧機能
 * ニュース保存機能
 * ニュース取得機能
-* ニュース自動更新機能（1日一回）
 * 言語変換機能
 * ローマ字機能
 * シェア機能
 * サポートCRUD機能
 * メール機能
 * 管理者機能
+
+##テーブル設計
+
+https://docs.google.com/spreadsheets/d/132j3lRk-BlzdaEPbVACc2tPeU22wNurnz_b64l1VZuo/edit?usp=sharing
 
 
 ## カタログ設計
