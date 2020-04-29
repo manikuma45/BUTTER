@@ -21,30 +21,27 @@
 * 言語変換機能
 * ローマ字機能
 * シェア機能
-* サポーターCRUD機能
-* サービスCRUD機能
-* 質問相談CRUD機能
-* チャット機能
+* サポートCRUD機能
+* メール機能
 * 管理者機能
-* ユーザーCRUD機能
+
 
 ## カタログ設計
 
-https://docs.google.com/spreadsheets/d/1nGrv5MshX3tZNNgl5v3CveELzahZoPR08Pa-rIx5-5k/edit?usp=sharing
-
+https://docs.google.com/spreadsheets/d/138tA6EONc7ApKFhMSKxfpM7q1xh5nEemZGLLp-KCUsA/edit?usp=sharing
 ## ER図
 
-https://cacoo.com/diagrams/z6zOOKOsZhlAu7nZ/B0C83
+https://cacoo.com/diagrams/skqabFkfYlwqbZat/B49C0
 
 ## リーンキャンパス
 
 https://drive.google.com/file/d/1trbyNucYqdNv8_lzZmUrMvJfXVwpw8qS/view?usp=sharing
 
 ## 使用予定Gem
- * devise
+ * rails_admin
+ * cancancan
  * mini_magick
  * carrierwave
  * rails-i18n
  * bootstrap
- 
 
