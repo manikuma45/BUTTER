@@ -16,15 +16,20 @@
 ## 機能一覧
 * ニュース一覧機能
 * ニュース保存機能
-* ニュース取得機能
+* ニュース取得機能(bing news search APIによる取得)
 * 言語変換機能
 * ローマ字機能
 * シェア機能
 * サポートCRUD機能
+   *サポート一覧機能
+   *サポート作成機能（管理者のみ）
+   *サポート更新機能（管理者のみ）
+   *サポート削除機能（管理者のみ）
 * メール機能
 * 管理者機能
 
-##テーブル設計
+
+## テーブル設計
 
 https://docs.google.com/spreadsheets/d/132j3lRk-BlzdaEPbVACc2tPeU22wNurnz_b64l1VZuo/edit?usp=sharing
 
