@@ -3,7 +3,7 @@ class BingSearchController < ApplicationController
 require 'net/http'
 
 ACCESS_KEY = '13f5b67986cd4c1399d962691f8ec0e1'
-URL = 'https://api.cognitive.microsoft.com/bing/v7.0/search'
+URL = 'https://api.cognitive.microsoft.com/bing/v7.0/news/search'
 	def index
 
 		@results = search('日本')

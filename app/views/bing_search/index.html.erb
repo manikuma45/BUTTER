@@ -2,20 +2,16 @@
 
 <h1>News</h1>
 <table>
-	<tr>
-		<th>タイトル</th>
-		<th>内容</th>
-	</tr>
-<% @results['webPages']['value'].each do |result| %>
+<% @results['value'].each do |result| %>
 <tr>
-	<td>
-		<%= link_to result['name'], result['url'] %>
-	</td>
-	<td><%= result['snippet'] %>
-	
-	<br>
-	</td>
+<td>
+<%= image_tag result['image']['thumbnail']['contentUrl'] if result['image']%>
+</td>
+<td>
+<%= link_to result['name'], result['url'] %>
+<br>
+<%= result['description'] %>
+</td>
 </tr>
 <% end %>
 </table>
-
