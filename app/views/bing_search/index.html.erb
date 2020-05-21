@@ -1,2 +1,21 @@
-<% @results.each do |result| %>
+
+
+<h1>News</h1>
+<table>
+	<tr>
+		<th>タイトル</th>
+		<th>内容</th>
+	</tr>
+<% @results['webPages']['value'].each do |result| %>
+<tr>
+	<td>
+		<%= link_to result['name'], result['url'] %>
+	</td>
+	<td><%= result['snippet'] %>
+	
+	<br>
+	</td>
+</tr>
 <% end %>
+</table>
+
