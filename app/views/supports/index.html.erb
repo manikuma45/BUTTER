@@ -1,2 +1,19 @@
-<h1>Supports#index</h1>
-<p>Find me in app/views/supports/index.html.erb</p>
+<table>
+  <tr>
+    <th>タイトル</th>
+    <th>内容</th>
+  </tr>
+<% @supports.each do |support| %>
+  <tr>
+    <td><%= support.title %></td>
+    <td><%= support.content %></td>
+    <td><%= link_to '詳細を確認する', support_path(support.id) %></td>
+   <td> <%= link_to "サポート内容を編集する", edit_support_path(support.id), data: { confirm: '本当に編集していいですか？' }  %></td>
+   <td><%= link_to 'ブログを削除する', support_path(support.id), method: :delete,data: { confirm: '本当に編集していいですか？' } %></td>
+  </tr>
+<% end %>
+</table>
+
+
+<%= link_to 'support作成画面に戻る', new_support_path %>
+

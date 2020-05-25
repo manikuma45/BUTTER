@@ -6,7 +6,7 @@ before_action :set_support, only: [:show, :edit, :update, :destroy]
   end
 
   def new
-  	@support = Supoort.new
+  	@support = Support.new
   end
 
   def show
