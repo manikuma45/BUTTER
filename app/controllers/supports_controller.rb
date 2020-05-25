@@ -33,8 +33,8 @@ def update
 end
 
 def destroy
-	if @support.destory
-		redirect_to support_path, notice: "サポートを削除しました!"
+	if @support.destroy
+		redirect_to supports_path, notice: "サポートを削除しました!"
 	end
 end
 
