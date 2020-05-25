@@ -15,7 +15,7 @@ before_action :set_support, only: [:show, :edit, :update, :destroy]
   def edit
   end
 
-  def cerate
+  def create
   	@support = Support.create(support_params)
    if @support.save
   	redirect_to support_path, notice: "新しいサポートを作成しました！"
