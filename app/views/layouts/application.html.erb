@@ -10,6 +10,21 @@
   </head>
 
   <body>
+    <% flash.each do |key, value| %>
+      <%= content_tag(:div, value, class: "#{key}") %>
+    <% end %>
+    <% if logged_in? %>
+      <%= link_to "Logout", session_path(current_admin.id), method: :delete %>
+      <%= link_to "サポート作成する", supports_path %>
+       <% else %>
+       <%= link_to "Login", new_session_path %>
+    <% end %>
+    <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><%= link_to "NEWS", supports_path %></li>
+    <li class="breadcrumb-item"><%= link_to "SUPPORT", supports_path %></li>
+  </ol>
+</nav>
     <%= yield %>
   </body>
 </html>

@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 2.5'
 #画像処理のためのgem
 gem 'carrierwave'
 gem 'mini_magick'
+
+gem 'bcrypt', '3.1.11'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
