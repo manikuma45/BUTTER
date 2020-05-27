@@ -1,0 +1,22 @@
+<%= form_with url: :bing_search_index, method: :get, local: true do |f|  %>
+ <%= f.text_field :q, value: @query  %>
+ <%= f.select :lang, [['EN ', 'en'], ['JA' , 'ja'], ['HI' , 'hi']], { include_blank: false, selected: @lang} %>
+ <%= f.submit 'Search' %>
+<% end %>
+
+
+<h1>News</h1>
+<table>
+<% @results['value'].each do |result| %>
+<tr>
+<td>
+<%= image_tag result['image']['thumbnail']['contentUrl'] if result['image']%>
+</td>
+<td>
+<%= link_to result['name'], result['url'] %>
+<br>
+<%= result['description'] %>
+</td>
+</tr>
+<% end %>
+</table>
