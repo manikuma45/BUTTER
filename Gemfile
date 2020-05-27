@@ -31,6 +31,9 @@ gem 'carrierwave'
 gem 'mini_magick'
 
 gem 'bcrypt', '3.1.11'
+
+gem 'bootstrap', '~> 4.1.1'
+gem 'jquery-rails'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
